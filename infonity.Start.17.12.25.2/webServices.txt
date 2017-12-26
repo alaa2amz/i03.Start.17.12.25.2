@@ -1,7 +1,7 @@
 http://arena-egypt.com/testbed/infontity/
 Action,URL,Type,Parameters,Result
 register,sign_up,post,user_name,email,password,speciality
-login,sign_in,post,user_name,password"
+login,sign_in,POST,user_name,password
 allEvent,allEvent,get
 agenda,getAgenda,post,event_id
 allPatient,allPatient,get,user_id

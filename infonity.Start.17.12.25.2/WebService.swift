@@ -59,10 +59,14 @@ class WebService: NSObject {
         let webServices = WebService.readConfigureFile()
         for webService in webServices {
            // let url = URL(string: webService.actionName, relativeTo: WebService.baseUrl)
-            let url = URL(string: webService.actionName, relativeTo: WebService.baseUrl)
+            let url = URL(string: webService.actionUrl, relativeTo: WebService.baseUrl)
             var request = URLRequest(url: url!.absoluteURL)
             request.httpMethod = webService.method
-            request.httpBody = try! JSONSerialization.data(withJSONObject: webService.parameters, options: .prettyPrinted)
+         
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+             request.addValue("json", forHTTPHeaderField: "Data-Type")
+            
+            request.httpBody = try! JSONSerialization.data(withJSONObject: webService.parameters, options: .sortedKeys)
             requstsDictionary[webService.actionName] = request
         }
        return requstsDictionary

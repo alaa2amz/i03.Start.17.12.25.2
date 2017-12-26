@@ -29,12 +29,38 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
         enteredParameters["password"] = passwordTextField.text!
         var req = (delegate?.webServices["login"])!
         print(req)
-        WebService.updateParametersFor(request: &req,parameters: enteredParameters)
-        let task = URLSession.shared.dataTask(with: (delegate?.webServices["login"])!) { (data, response, error) in
+        print(req.url?.absoluteString)
+       // WebService.updateParametersFor(request: &req,parameters: enteredParameters)
+        let testBody = String(data: req.httpBody!, encoding: String.Encoding.utf8)
+        print(testBody)
+        
+        print(req.httpMethod)
+        print(":::::::::::::")
+        print(req.allHTTPHeaderFields)
+        
+       // req.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        var shadyReq = URLRequest(url: URL(string:"http://arena-egypt.com/testbed/infontity/sign_in")!)
+        shadyReq.httpMethod = "POST"
+        //shadyReq.httpBody = Data(  "{\n  \"password\" : \"123456\",\n  \"user_name\" : \"ibrahim\"\n}"
+        //shadyReq.httpBody = String("{\n  \"password\" : \"123456\",\n  \"user_name\" : \"ibrahim\"\n}").data(using: String.Encoding.utf8)
+       shadyReq.httpBody = try! JSONSerialization.data(withJSONObject: enteredParameters, options: .prettyPrinted)
+        shadyReq.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        //request.addValue("json", forHTTPHeaderField: "Data-Type")
+        
+        
+        
+        
+        
+       // let task = URLSession.shared.dataTask(with: (delegate?.webServices["login"])!) { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: shadyReq) { (data, response, error) in
+            print(response!)
+            print(String(data: data!, encoding: String.Encoding.utf8))
             
-            print(data!)
         }
         task.resume()
+        print("-+-++--")
+        print(req)
+        print(testBody)
     }
     
     @IBOutlet weak var remeberMeSwitch: UISwitch!

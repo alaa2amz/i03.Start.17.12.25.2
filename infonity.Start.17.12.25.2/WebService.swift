@@ -74,6 +74,39 @@ class WebService: NSObject {
     static func updateParametersFor( request:  inout URLRequest, parameters: [String:String] ){
         
         request.httpBody = try! JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+        
+    }
+        
+    static func getdataOfWebServiceOfActionName(actionName : String ,parameters:
+        [String:String],completionHandler:@escaping (Data?, URLResponse?, Error?)->(Void)){
+        print("uiopp___++++")
+        var d : Data?
+        var r : URLResponse?
+        var e : Error?
+            //let body = try? JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+            let requestsDictionary = WebService.getRequestsDictionary()
+            var request = requestsDictionary[actionName]!
+        
+       
+            WebService.updateParametersFor(request: &request, parameters: parameters)
+        print (request)
+            
+   
+        let task = URLSession.shared.dataTask(with:request ) { (data, response, error) in
+                
+                print(response!)
+        print(String(data: data!, encoding: String.Encoding.utf8) ?? "ooPP")
+                print("{}")
+        print(response ?? "UUUIIIII")
+                d = data
+                r = response
+                e = error
+             completionHandler(d, r, e)
+            
+            }
+        task.resume()
+       
+        
     }
     
 }

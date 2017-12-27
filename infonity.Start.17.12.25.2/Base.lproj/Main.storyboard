@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aDL-o8-CE3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -160,13 +160,106 @@
                     <view key="view" contentMode="scaleToFill" id="GSl-7H-yNn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Cnt-qR-yIZ">
+                                <rect key="frame" x="91" y="209" width="138" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHG-0V-50l">
+                                        <rect key="frame" x="92" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Events"/>
+                                        <connections>
+                                            <segue destination="gPN-pB-f0v" kind="show" id="lca-TP-X8E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcn-MC-PyV">
+                                        <rect key="frame" x="23" y="30" width="115" height="30"/>
+                                        <state key="normal" title="Patient Directory"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kc1-hE-upi">
+                                        <rect key="frame" x="34" y="60" width="104" height="30"/>
+                                        <state key="normal" title="Diseases guide"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlQ-Zb-Y0y">
+                                        <rect key="frame" x="61" y="90" width="77" height="30"/>
+                                        <state key="normal" title="Contact Us"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzk-0G-jvi">
+                                        <rect key="frame" x="0.0" y="120" width="138" height="30"/>
+                                        <state key="normal" title="Drugs &amp; HCPs Tools"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cnt-qR-yIZ" firstAttribute="centerX" secondItem="GSl-7H-yNn" secondAttribute="centerX" id="MCh-Yw-dZ0"/>
+                            <constraint firstItem="Cnt-qR-yIZ" firstAttribute="centerY" secondItem="GSl-7H-yNn" secondAttribute="centerY" id="mo4-Oa-qhA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bbb-jp-G0x"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSu-Wm-1E5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2231" y="-209"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mGU-Qw-YoR">
+            <objects>
+                <viewController id="gPN-pB-f0v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TAh-MY-FkE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wDc-Fv-DGz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qli-Ts-L7E">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                    </imageView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uxM-F3-oRr">
+                                        <rect key="frame" x="0.0" y="128" width="320" height="29"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Qli-Ts-L7E" firstAttribute="top" secondItem="wDc-Fv-DGz" secondAttribute="top" id="7cx-FT-ZDB"/>
+                                    <constraint firstItem="uxM-F3-oRr" firstAttribute="leading" secondItem="wDc-Fv-DGz" secondAttribute="leading" id="Msl-sY-xnu"/>
+                                    <constraint firstAttribute="bottom" secondItem="uxM-F3-oRr" secondAttribute="bottom" id="Z6q-uY-mor"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qli-Ts-L7E" secondAttribute="trailing" id="e6q-Em-FUR"/>
+                                    <constraint firstItem="Qli-Ts-L7E" firstAttribute="leading" secondItem="wDc-Fv-DGz" secondAttribute="leading" id="eRn-bv-Tsu"/>
+                                    <constraint firstAttribute="trailing" secondItem="uxM-F3-oRr" secondAttribute="trailing" id="q0M-zA-Xbo"/>
+                                    <constraint firstAttribute="height" constant="156" id="yWJ-Xz-Qoq"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcj-Om-bJA">
+                                <rect key="frame" x="0.0" y="156" width="320" height="412"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xwM-Xk-7UY" firstAttribute="trailing" secondItem="Qcj-Om-bJA" secondAttribute="trailing" id="1Kw-pX-fGM"/>
+                            <constraint firstItem="wDc-Fv-DGz" firstAttribute="leading" secondItem="TAh-MY-FkE" secondAttribute="leading" id="3gX-aH-pwc"/>
+                            <constraint firstItem="Qcj-Om-bJA" firstAttribute="top" secondItem="wDc-Fv-DGz" secondAttribute="bottom" id="CDu-Q8-x3M"/>
+                            <constraint firstItem="wDc-Fv-DGz" firstAttribute="top" secondItem="TAh-MY-FkE" secondAttribute="top" id="Hmk-ID-Mqd"/>
+                            <constraint firstItem="xwM-Xk-7UY" firstAttribute="bottom" secondItem="Qcj-Om-bJA" secondAttribute="bottom" id="IrQ-F8-UsG"/>
+                            <constraint firstItem="Qcj-Om-bJA" firstAttribute="leading" secondItem="xwM-Xk-7UY" secondAttribute="leading" id="gfT-a3-0A0"/>
+                            <constraint firstAttribute="trailing" secondItem="wDc-Fv-DGz" secondAttribute="trailing" id="iyU-mf-DA0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xwM-Xk-7UY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TVW-zf-qfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JNC-bW-4ps">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </objects>
+            <point key="canvasLocation" x="3128" y="-373"/>
         </scene>
     </scenes>
 </document>

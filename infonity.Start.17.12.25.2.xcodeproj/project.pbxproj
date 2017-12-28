@@ -8,34 +8,76 @@
 
 /* Begin PBXBuildFile section */
 		002334151FF3F7920035F2AE /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002334141FF3F7920035F2AE /* CellView.xib */; };
-		002334171FF3F81C0035F2AE /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002334161FF3F81C0035F2AE /* CellView.swift */; };
 		004166BB1FF0FFBB005A1E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */; };
-		004166BD1FF0FFBB005A1E31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166BC1FF0FFBB005A1E31 /* ViewController.swift */; };
 		004166C01FF0FFBB005A1E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004166BE1FF0FFBB005A1E31 /* Main.storyboard */; };
 		004166C21FF0FFBB005A1E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004166C11FF0FFBB005A1E31 /* Assets.xcassets */; };
 		004166C51FF0FFBB005A1E31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004166C31FF0FFBB005A1E31 /* LaunchScreen.storyboard */; };
-		004166CD1FF10411005A1E31 /* AnnularButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166CC1FF10411005A1E31 /* AnnularButtons.swift */; };
 		004166CF1FF12EC7005A1E31 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166CE1FF12EC7005A1E31 /* LogInViewController.swift */; };
 		004166D11FF14C21005A1E31 /* webServices.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004166D01FF14C21005A1E31 /* webServices.txt */; };
 		004166D31FF14C2F005A1E31 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166D21FF14C2F005A1E31 /* WebService.swift */; };
+		00B957741FF4D99700EEC35E /* DiseasesGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */; };
+		00B957781FF4DBAD00EEC35E /* PatientDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */; };
+		00B9577A1FF4DC3400EEC35E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */; };
+		00B9577C1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9577B1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift */; };
+		00B9577E1FF4F77000EEC35E /* IBs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9577D1FF4F77000EEC35E /* IBs.swift */; };
+		00B957961FF5223200EEC35E /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957831FF5223200EEC35E /* CalendarEnums.swift */; };
+		00B957971FF5223200EEC35E /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957841FF5223200EEC35E /* CalendarStructs.swift */; };
+		00B957981FF5223200EEC35E /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957851FF5223200EEC35E /* GlobalFunctionsAndExtensions.swift */; };
+		00B957991FF5223200EEC35E /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00B957861FF5223200EEC35E /* Info-iOS.plist */; };
+		00B9579A1FF5223200EEC35E /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00B957871FF5223200EEC35E /* Info-tvOS.plist */; };
+		00B9579B1FF5223200EEC35E /* InternalActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957881FF5223200EEC35E /* InternalActionFunctions.swift */; };
+		00B9579C1FF5223200EEC35E /* InternalQueryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957891FF5223200EEC35E /* InternalQueryFunctions.swift */; };
+		00B9579D1FF5223200EEC35E /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9578B1FF5223200EEC35E /* JTAppleCalendarDelegateProtocol.swift */; };
+		00B9579E1FF5223200EEC35E /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9578C1FF5223200EEC35E /* JTAppleCalendarLayout.swift */; };
+		00B9579F1FF5223200EEC35E /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9578D1FF5223200EEC35E /* JTAppleCalendarLayoutProtocol.swift */; };
+		00B957A01FF5223200EEC35E /* JTAppleCalendarVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9578E1FF5223200EEC35E /* JTAppleCalendarVariables.swift */; };
+		00B957A11FF5223200EEC35E /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9578F1FF5223200EEC35E /* JTAppleCalendarView.swift */; };
+		00B957A21FF5223200EEC35E /* JTAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957901FF5223200EEC35E /* JTAppleCell.swift */; };
+		00B957A31FF5223200EEC35E /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957911FF5223200EEC35E /* JTAppleCollectionReusableView.swift */; };
+		00B957A41FF5223200EEC35E /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957921FF5223200EEC35E /* JTCalendarProtocols.swift */; };
+		00B957A51FF5223200EEC35E /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957931FF5223200EEC35E /* UICollectionViewDelegates.swift */; };
+		00B957A61FF5223200EEC35E /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957941FF5223200EEC35E /* UIScrollViewDelegates.swift */; };
+		00B957A71FF5223200EEC35E /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957951FF5223200EEC35E /* UserInteractionFunctions.swift */; };
+		00B957AB1FF53D8500EEC35E /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957AA1FF53D8500EEC35E /* CellView.swift */; };
 		00C715691FF2A3D2007FD103 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C715681FF2A3D2007FD103 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		002334121FF3F7390035F2AE /* JTAppleCalendar-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "JTAppleCalendar-master"; sourceTree = "<group>"; };
 		002334141FF3F7920035F2AE /* CellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
-		002334161FF3F81C0035F2AE /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		004166B71FF0FFBB005A1E31 /* infonity.Start.17.12.25.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = infonity.Start.17.12.25.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		004166BC1FF0FFBB005A1E31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		004166BF1FF0FFBB005A1E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		004166C11FF0FFBB005A1E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004166C41FF0FFBB005A1E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		004166C61FF0FFBB005A1E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		004166CC1FF10411005A1E31 /* AnnularButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnularButtons.swift; sourceTree = "<group>"; };
 		004166CE1FF12EC7005A1E31 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		004166D01FF14C21005A1E31 /* webServices.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = webServices.txt; sourceTree = "<group>"; };
 		004166D21FF14C2F005A1E31 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasesGuideViewController.swift; sourceTree = "<group>"; };
+		00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDirectoryViewController.swift; sourceTree = "<group>"; };
+		00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		00B9577B1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugsAndHCPsToolsViewController.swift; sourceTree = "<group>"; };
+		00B9577D1FF4F77000EEC35E /* IBs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBs.swift; sourceTree = "<group>"; };
+		00B957831FF5223200EEC35E /* CalendarEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEnums.swift; sourceTree = "<group>"; };
+		00B957841FF5223200EEC35E /* CalendarStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarStructs.swift; sourceTree = "<group>"; };
+		00B957851FF5223200EEC35E /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
+		00B957861FF5223200EEC35E /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		00B957871FF5223200EEC35E /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		00B957881FF5223200EEC35E /* InternalActionFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalActionFunctions.swift; sourceTree = "<group>"; };
+		00B957891FF5223200EEC35E /* InternalQueryFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalQueryFunctions.swift; sourceTree = "<group>"; };
+		00B9578A1FF5223200EEC35E /* JTAppleCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTAppleCalendar.h; sourceTree = "<group>"; };
+		00B9578B1FF5223200EEC35E /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
+		00B9578C1FF5223200EEC35E /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
+		00B9578D1FF5223200EEC35E /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
+		00B9578E1FF5223200EEC35E /* JTAppleCalendarVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarVariables.swift; sourceTree = "<group>"; };
+		00B9578F1FF5223200EEC35E /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarView.swift; sourceTree = "<group>"; };
+		00B957901FF5223200EEC35E /* JTAppleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCell.swift; sourceTree = "<group>"; };
+		00B957911FF5223200EEC35E /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
+		00B957921FF5223200EEC35E /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTCalendarProtocols.swift; sourceTree = "<group>"; };
+		00B957931FF5223200EEC35E /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegates.swift; sourceTree = "<group>"; };
+		00B957941FF5223200EEC35E /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegates.swift; sourceTree = "<group>"; };
+		00B957951FF5223200EEC35E /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInteractionFunctions.swift; sourceTree = "<group>"; };
+		00B957AA1FF53D8500EEC35E /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		00C715681FF2A3D2007FD103 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +95,7 @@
 		004166AE1FF0FFBB005A1E31 = {
 			isa = PBXGroup;
 			children = (
+				00B957AA1FF53D8500EEC35E /* CellView.swift */,
 				004166B91FF0FFBB005A1E31 /* infonity.Start.17.12.25.2 */,
 				004166B81FF0FFBB005A1E31 /* Products */,
 			);
@@ -69,23 +112,84 @@
 		004166B91FF0FFBB005A1E31 /* infonity.Start.17.12.25.2 */ = {
 			isa = PBXGroup;
 			children = (
-				002334121FF3F7390035F2AE /* JTAppleCalendar-master */,
-				004166D01FF14C21005A1E31 /* webServices.txt */,
-				004166D21FF14C2F005A1E31 /* WebService.swift */,
-				004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */,
-				004166BC1FF0FFBB005A1E31 /* ViewController.swift */,
-				004166CE1FF12EC7005A1E31 /* LogInViewController.swift */,
-				004166BE1FF0FFBB005A1E31 /* Main.storyboard */,
-				002334141FF3F7920035F2AE /* CellView.xib */,
-				002334161FF3F81C0035F2AE /* CellView.swift */,
-				00C715681FF2A3D2007FD103 /* HomeViewController.swift */,
-				004166CC1FF10411005A1E31 /* AnnularButtons.swift */,
+				00B9577F1FF520D000EEC35E /* 3rdParty */,
+				00B957751FF4DA0C00EEC35E /* Ms */,
+				00B957761FF4DA5B00EEC35E /* Vs */,
+				00B957721FF4D88900EEC35E /* Cs */,
 				004166C11FF0FFBB005A1E31 /* Assets.xcassets */,
-				004166C31FF0FFBB005A1E31 /* LaunchScreen.storyboard */,
 				004166C61FF0FFBB005A1E31 /* Info.plist */,
 			);
 			path = infonity.Start.17.12.25.2;
 			sourceTree = "<group>";
+		};
+		00B957721FF4D88900EEC35E /* Cs */ = {
+			isa = PBXGroup;
+			children = (
+				004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */,
+				00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */,
+				004166CE1FF12EC7005A1E31 /* LogInViewController.swift */,
+				00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */,
+				00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */,
+				00C715681FF2A3D2007FD103 /* HomeViewController.swift */,
+				00B9577B1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift */,
+			);
+			path = Cs;
+			sourceTree = "<group>";
+		};
+		00B957751FF4DA0C00EEC35E /* Ms */ = {
+			isa = PBXGroup;
+			children = (
+				004166D01FF14C21005A1E31 /* webServices.txt */,
+				004166D21FF14C2F005A1E31 /* WebService.swift */,
+			);
+			path = Ms;
+			sourceTree = "<group>";
+		};
+		00B957761FF4DA5B00EEC35E /* Vs */ = {
+			isa = PBXGroup;
+			children = (
+				004166BE1FF0FFBB005A1E31 /* Main.storyboard */,
+				00B9577D1FF4F77000EEC35E /* IBs.swift */,
+				002334141FF3F7920035F2AE /* CellView.xib */,
+				004166C31FF0FFBB005A1E31 /* LaunchScreen.storyboard */,
+			);
+			path = Vs;
+			sourceTree = "<group>";
+		};
+		00B9577F1FF520D000EEC35E /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				00B957821FF5223200EEC35E /* JTAppleCalendar */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		00B957821FF5223200EEC35E /* JTAppleCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				00B957831FF5223200EEC35E /* CalendarEnums.swift */,
+				00B957841FF5223200EEC35E /* CalendarStructs.swift */,
+				00B957851FF5223200EEC35E /* GlobalFunctionsAndExtensions.swift */,
+				00B957861FF5223200EEC35E /* Info-iOS.plist */,
+				00B957871FF5223200EEC35E /* Info-tvOS.plist */,
+				00B957881FF5223200EEC35E /* InternalActionFunctions.swift */,
+				00B957891FF5223200EEC35E /* InternalQueryFunctions.swift */,
+				00B9578A1FF5223200EEC35E /* JTAppleCalendar.h */,
+				00B9578B1FF5223200EEC35E /* JTAppleCalendarDelegateProtocol.swift */,
+				00B9578C1FF5223200EEC35E /* JTAppleCalendarLayout.swift */,
+				00B9578D1FF5223200EEC35E /* JTAppleCalendarLayoutProtocol.swift */,
+				00B9578E1FF5223200EEC35E /* JTAppleCalendarVariables.swift */,
+				00B9578F1FF5223200EEC35E /* JTAppleCalendarView.swift */,
+				00B957901FF5223200EEC35E /* JTAppleCell.swift */,
+				00B957911FF5223200EEC35E /* JTAppleCollectionReusableView.swift */,
+				00B957921FF5223200EEC35E /* JTCalendarProtocols.swift */,
+				00B957931FF5223200EEC35E /* UICollectionViewDelegates.swift */,
+				00B957941FF5223200EEC35E /* UIScrollViewDelegates.swift */,
+				00B957951FF5223200EEC35E /* UserInteractionFunctions.swift */,
+			);
+			name = JTAppleCalendar;
+			path = infonity.Start.17.12.25.2/3dParty/JTAppleCalendar;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -146,7 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B957991FF5223200EEC35E /* Info-iOS.plist in Resources */,
 				004166C51FF0FFBB005A1E31 /* LaunchScreen.storyboard in Resources */,
+				00B9579A1FF5223200EEC35E /* Info-tvOS.plist in Resources */,
 				004166C21FF0FFBB005A1E31 /* Assets.xcassets in Resources */,
 				004166C01FF0FFBB005A1E31 /* Main.storyboard in Resources */,
 				002334151FF3F7920035F2AE /* CellView.xib in Resources */,
@@ -161,13 +267,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B957A01FF5223200EEC35E /* JTAppleCalendarVariables.swift in Sources */,
 				004166CF1FF12EC7005A1E31 /* LogInViewController.swift in Sources */,
-				004166CD1FF10411005A1E31 /* AnnularButtons.swift in Sources */,
-				004166BD1FF0FFBB005A1E31 /* ViewController.swift in Sources */,
+				00B9579B1FF5223200EEC35E /* InternalActionFunctions.swift in Sources */,
 				004166D31FF14C2F005A1E31 /* WebService.swift in Sources */,
+				00B957A61FF5223200EEC35E /* UIScrollViewDelegates.swift in Sources */,
+				00B957A21FF5223200EEC35E /* JTAppleCell.swift in Sources */,
+				00B957981FF5223200EEC35E /* GlobalFunctionsAndExtensions.swift in Sources */,
+				00B9577A1FF4DC3400EEC35E /* ContactUsViewController.swift in Sources */,
+				00B957A41FF5223200EEC35E /* JTCalendarProtocols.swift in Sources */,
+				00B957781FF4DBAD00EEC35E /* PatientDirectoryViewController.swift in Sources */,
+				00B957971FF5223200EEC35E /* CalendarStructs.swift in Sources */,
+				00B957961FF5223200EEC35E /* CalendarEnums.swift in Sources */,
+				00B957A71FF5223200EEC35E /* UserInteractionFunctions.swift in Sources */,
+				00B9577E1FF4F77000EEC35E /* IBs.swift in Sources */,
+				00B957A11FF5223200EEC35E /* JTAppleCalendarView.swift in Sources */,
 				004166BB1FF0FFBB005A1E31 /* AppDelegate.swift in Sources */,
 				00C715691FF2A3D2007FD103 /* HomeViewController.swift in Sources */,
-				002334171FF3F81C0035F2AE /* CellView.swift in Sources */,
+				00B9579C1FF5223200EEC35E /* InternalQueryFunctions.swift in Sources */,
+				00B957A51FF5223200EEC35E /* UICollectionViewDelegates.swift in Sources */,
+				00B9579F1FF5223200EEC35E /* JTAppleCalendarLayoutProtocol.swift in Sources */,
+				00B9577C1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift in Sources */,
+				00B957741FF4D99700EEC35E /* DiseasesGuideViewController.swift in Sources */,
+				00B957AB1FF53D8500EEC35E /* CellView.swift in Sources */,
+				00B957A31FF5223200EEC35E /* JTAppleCollectionReusableView.swift in Sources */,
+				00B9579E1FF5223200EEC35E /* JTAppleCalendarLayout.swift in Sources */,
+				00B9579D1FF5223200EEC35E /* JTAppleCalendarDelegateProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

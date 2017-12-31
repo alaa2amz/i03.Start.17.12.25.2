@@ -9,7 +9,7 @@
 import UIKit
 
 class testfeetTableViewController: UITableViewController {
-    let picker = Bundle.main.loadNibNamed("inputPicker", owner: 0, options: nil)![0] as? UIView
+    let picker = PickerView()
     let left = DiabiticFeetCalculator.readDataFile(foot: "left", fileName: "diabeticFeet.txt")
     let right = DiabiticFeetCalculator.readDataFile(foot: "right", fileName: "diabeticFeet.txt")
 
@@ -54,8 +54,8 @@ class testfeetTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as? diabeticFeeetCellTableViewCell
         cell!.backgroundColor = UIColor.orange
-        cell!.leftTextField.inputView! = picker!
-        cell!.rightTextfield.inputView! = picker!
+        cell!.leftTextField.inputView! = picker
+        cell!.rightTextfield.inputView! = picker
         
 
       

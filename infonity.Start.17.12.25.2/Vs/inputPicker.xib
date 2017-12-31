@@ -29,6 +29,9 @@
                                         <constraint firstAttribute="width" constant="60" id="SCq-8O-Cbu"/>
                                     </constraints>
                                     <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="clickCancel:" destination="-1" eventType="touchUpInside" id="uoS-Ba-XOn"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I1-ee-Djw">
                                     <rect key="frame" x="60" y="0.0" width="255" height="30"/>

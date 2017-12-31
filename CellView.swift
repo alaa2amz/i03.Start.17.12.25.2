@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 
-class CellView: JTAppleDayCellView {
-    @IBOutlet var dayLabel: UILabel!
-}
+//class CellView: JTAppleDayCellView {
+//    @IBOutlet var dayLabel: UILabel!
+//}
+

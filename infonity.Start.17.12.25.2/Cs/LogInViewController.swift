@@ -96,6 +96,7 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
         userNameTextField.layer.backgroundColor = UIColor.green.cgColor
         userNameTextField.backgroundColor = UIColor.orange
         print("|___A___|")
+        let analysis = DiabiticFeetCalculator.readDataFile(foot: "left", fileName: "diabeticFeet.txt")
         print( userNameTextField.backgroundColor === userNameTextField.layer.backgroundColor)
 
         // Do any additional setup after loading the view.

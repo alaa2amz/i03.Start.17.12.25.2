@@ -1,0 +1,47 @@
+->Look – 20 seconds
+*Skin
+intact and healthy:0
+dry with fungus or light callus:1
+heavy callus build up:2
+open ulceration or history of previous ulcer:3
+*Nails
+well-kept:0
+unkempt and ragged:1
+thick, damaged, or infected:2
+*Deformity
+no deformity:0
+mild deformity:1
+major deformity:4
+*Footwear
+appropriate:0
+inappropriate:1
+causing trauma:2
+->Touch – 10 seconds
+*Temperature – Cold
+foot warm:0
+foot is cold:1
+*Temperature – Hot
+foot is warm:0
+foot is hot:1
+*Range of Motion
+full range to hallux:0
+hallux limitus:1
+hallux rigidus:2
+hallux amputation:3
+->Assess – 30 seconds
+*Sensation – Monofilament Testing
+10 sites detected:0
+7 to 9 sites detected:2
+0 to 6 sites detected:4
+*Sensation – Ask 4 Questions
+no to all questions:0
+yes to any of the questions:2
+*Pedal Pulses
+present:0
+absent:1
+*Dependent Rubor
+no:0
+yes:1
+*Erythema
+no:0
+yes:1

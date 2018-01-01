@@ -11,11 +11,7 @@
 		000EB4431FF8DED5005E08B5 /* Analisys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4421FF8DED5005E08B5 /* Analisys.swift */; };
 		000EB4461FF8F066005E08B5 /* DiabiticFeetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4451FF8F066005E08B5 /* DiabiticFeetCalculator.swift */; };
 		000EB4481FF9132D005E08B5 /* diabeticFeet.txt in Resources */ = {isa = PBXBuildFile; fileRef = 000EB4471FF9132D005E08B5 /* diabeticFeet.txt */; };
-		000EB44C1FF923C6005E08B5 /* DFCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000EB44B1FF923C6005E08B5 /* DFCell.xib */; };
-		000EB44E1FF926C3005E08B5 /* diabeticFeeetCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000EB44D1FF926C3005E08B5 /* diabeticFeeetCellTableViewCell.swift */; };
-		000EB4501FF929BA005E08B5 /* testfeetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000EB44F1FF929BA005E08B5 /* testfeetTableViewController.swift */; };
 		000EB4521FF94893005E08B5 /* inputPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000EB4511FF94893005E08B5 /* inputPicker.xib */; };
-		000EB4541FF94F37005E08B5 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4531FF94F37005E08B5 /* PickerView.swift */; };
 		002334151FF3F7920035F2AE /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002334141FF3F7920035F2AE /* CellView.xib */; };
 		004166BB1FF0FFBB005A1E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */; };
 		004166C01FF0FFBB005A1E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004166BE1FF0FFBB005A1E31 /* Main.storyboard */; };
@@ -24,12 +20,12 @@
 		004166CF1FF12EC7005A1E31 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166CE1FF12EC7005A1E31 /* LogInViewController.swift */; };
 		004166D11FF14C21005A1E31 /* webServices.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004166D01FF14C21005A1E31 /* webServices.txt */; };
 		004166D31FF14C2F005A1E31 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166D21FF14C2F005A1E31 /* WebService.swift */; };
+		0042252F1FFA4E860048565C /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0042252E1FFA4E860048565C /* View.xib */; };
 		004678D31FF8D5E20059C75E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004678D21FF8D5E20059C75E /* Result.swift */; };
 		00B957741FF4D99700EEC35E /* DiseasesGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */; };
 		00B957781FF4DBAD00EEC35E /* PatientDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */; };
 		00B9577A1FF4DC3400EEC35E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */; };
 		00B9577C1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9577B1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift */; };
-		00B9577E1FF4F77000EEC35E /* IBs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9577D1FF4F77000EEC35E /* IBs.swift */; };
 		00B957AB1FF53D8500EEC35E /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957AA1FF53D8500EEC35E /* CellView.swift */; };
 		00C715691FF2A3D2007FD103 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C715681FF2A3D2007FD103 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -39,11 +35,7 @@
 		000EB4421FF8DED5005E08B5 /* Analisys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analisys.swift; sourceTree = "<group>"; };
 		000EB4451FF8F066005E08B5 /* DiabiticFeetCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabiticFeetCalculator.swift; sourceTree = "<group>"; };
 		000EB4471FF9132D005E08B5 /* diabeticFeet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diabeticFeet.txt; sourceTree = "<group>"; };
-		000EB44B1FF923C6005E08B5 /* DFCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DFCell.xib; sourceTree = "<group>"; };
-		000EB44D1FF926C3005E08B5 /* diabeticFeeetCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diabeticFeeetCellTableViewCell.swift; sourceTree = "<group>"; };
-		000EB44F1FF929BA005E08B5 /* testfeetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testfeetTableViewController.swift; sourceTree = "<group>"; };
 		000EB4511FF94893005E08B5 /* inputPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inputPicker.xib; sourceTree = "<group>"; };
-		000EB4531FF94F37005E08B5 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		002334141FF3F7920035F2AE /* CellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
 		004166B71FF0FFBB005A1E31 /* infonity.Start.17.12.25.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = infonity.Start.17.12.25.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,12 +46,12 @@
 		004166CE1FF12EC7005A1E31 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		004166D01FF14C21005A1E31 /* webServices.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = webServices.txt; sourceTree = "<group>"; };
 		004166D21FF14C2F005A1E31 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		0042252E1FFA4E860048565C /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		004678D21FF8D5E20059C75E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasesGuideViewController.swift; sourceTree = "<group>"; };
 		00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDirectoryViewController.swift; sourceTree = "<group>"; };
 		00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		00B9577B1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugsAndHCPsToolsViewController.swift; sourceTree = "<group>"; };
-		00B9577D1FF4F77000EEC35E /* IBs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBs.swift; sourceTree = "<group>"; };
 		00B957AA1FF53D8500EEC35E /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		00C715681FF2A3D2007FD103 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +82,6 @@
 		004166AE1FF0FFBB005A1E31 = {
 			isa = PBXGroup;
 			children = (
-				000EB4441FF8DFB2005E08B5 /* DFModel */,
 				00B957AA1FF53D8500EEC35E /* CellView.swift */,
 				004166B91FF0FFBB005A1E31 /* infonity.Start.17.12.25.2 */,
 				004166B81FF0FFBB005A1E31 /* Products */,
@@ -118,6 +109,15 @@
 			path = infonity.Start.17.12.25.2;
 			sourceTree = "<group>";
 		};
+		004225B61FFA99810048565C /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				004166D21FF14C2F005A1E31 /* WebService.swift */,
+				004166D01FF14C21005A1E31 /* webServices.txt */,
+			);
+			name = networking;
+			sourceTree = "<group>";
+		};
 		00B957721FF4D88900EEC35E /* Cs */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,8 +135,8 @@
 		00B957751FF4DA0C00EEC35E /* Ms */ = {
 			isa = PBXGroup;
 			children = (
-				004166D01FF14C21005A1E31 /* webServices.txt */,
-				004166D21FF14C2F005A1E31 /* WebService.swift */,
+				000EB4441FF8DFB2005E08B5 /* DFModel */,
+				004225B61FFA99810048565C /* networking */,
 			);
 			path = Ms;
 			sourceTree = "<group>";
@@ -145,12 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				004166BE1FF0FFBB005A1E31 /* Main.storyboard */,
-				000EB44B1FF923C6005E08B5 /* DFCell.xib */,
 				000EB4511FF94893005E08B5 /* inputPicker.xib */,
-				000EB44D1FF926C3005E08B5 /* diabeticFeeetCellTableViewCell.swift */,
-				000EB44F1FF929BA005E08B5 /* testfeetTableViewController.swift */,
-				00B9577D1FF4F77000EEC35E /* IBs.swift */,
-				000EB4531FF94F37005E08B5 /* PickerView.swift */,
+				0042252E1FFA4E860048565C /* View.xib */,
 				002334141FF3F7920035F2AE /* CellView.xib */,
 				004166C31FF0FFBB005A1E31 /* LaunchScreen.storyboard */,
 			);
@@ -223,12 +219,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000EB44C1FF923C6005E08B5 /* DFCell.xib in Resources */,
 				004166C51FF0FFBB005A1E31 /* LaunchScreen.storyboard in Resources */,
 				004166C21FF0FFBB005A1E31 /* Assets.xcassets in Resources */,
 				004166C01FF0FFBB005A1E31 /* Main.storyboard in Resources */,
 				000EB4481FF9132D005E08B5 /* diabeticFeet.txt in Resources */,
 				002334151FF3F7920035F2AE /* CellView.xib in Resources */,
+				0042252F1FFA4E860048565C /* View.xib in Resources */,
 				000EB4521FF94893005E08B5 /* inputPicker.xib in Resources */,
 				004166D11FF14C21005A1E31 /* webServices.txt in Resources */,
 			);
@@ -241,16 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000EB44E1FF926C3005E08B5 /* diabeticFeeetCellTableViewCell.swift in Sources */,
 				004678D31FF8D5E20059C75E /* Result.swift in Sources */,
 				004166CF1FF12EC7005A1E31 /* LogInViewController.swift in Sources */,
 				004166D31FF14C2F005A1E31 /* WebService.swift in Sources */,
 				00B9577A1FF4DC3400EEC35E /* ContactUsViewController.swift in Sources */,
-				000EB4501FF929BA005E08B5 /* testfeetTableViewController.swift in Sources */,
 				00B957781FF4DBAD00EEC35E /* PatientDirectoryViewController.swift in Sources */,
 				000EB4411FF8DDC3005E08B5 /* Test.swift in Sources */,
-				00B9577E1FF4F77000EEC35E /* IBs.swift in Sources */,
-				000EB4541FF94F37005E08B5 /* PickerView.swift in Sources */,
 				004166BB1FF0FFBB005A1E31 /* AppDelegate.swift in Sources */,
 				000EB4461FF8F066005E08B5 /* DiabiticFeetCalculator.swift in Sources */,
 				00C715691FF2A3D2007FD103 /* HomeViewController.swift in Sources */,

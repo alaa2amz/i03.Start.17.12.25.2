@@ -13,6 +13,7 @@
 		000EB4481FF9132D005E08B5 /* diabeticFeet.txt in Resources */ = {isa = PBXBuildFile; fileRef = 000EB4471FF9132D005E08B5 /* diabeticFeet.txt */; };
 		000EB4521FF94893005E08B5 /* inputPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000EB4511FF94893005E08B5 /* inputPicker.xib */; };
 		002334151FF3F7920035F2AE /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002334141FF3F7920035F2AE /* CellView.xib */; };
+		00246F9D1FFB9C8400B98A5B /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246F9C1FFB9C8400B98A5B /* EventsViewController.swift */; };
 		004166BB1FF0FFBB005A1E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */; };
 		004166C01FF0FFBB005A1E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004166BE1FF0FFBB005A1E31 /* Main.storyboard */; };
 		004166C21FF0FFBB005A1E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004166C11FF0FFBB005A1E31 /* Assets.xcassets */; };
@@ -22,12 +23,38 @@
 		004166D31FF14C2F005A1E31 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166D21FF14C2F005A1E31 /* WebService.swift */; };
 		0042252F1FFA4E860048565C /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0042252E1FFA4E860048565C /* View.xib */; };
 		004678D31FF8D5E20059C75E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004678D21FF8D5E20059C75E /* Result.swift */; };
+		004F403D1FFBCAEC009316C1 /* menuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004F40351FFBCAEB009316C1 /* menuViewController.xib */; };
+		004F403E1FFBCAEC009316C1 /* toAppDelegate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004F40361FFBCAEB009316C1 /* toAppDelegate.txt */; };
+		004F403F1FFBCAEC009316C1 /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F40371FFBCAEC009316C1 /* MenuHeader.swift */; };
+		004F40401FFBCAEC009316C1 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F40381FFBCAEC009316C1 /* menuViewController.swift */; };
+		004F40411FFBCAEC009316C1 /* menuuExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F40391FFBCAEC009316C1 /* menuuExtension.swift */; };
+		004F40421FFBCAEC009316C1 /* menuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004F403A1FFBCAEC009316C1 /* menuTableViewController.xib */; };
+		004F40431FFBCAEC009316C1 /* menuItems.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004F403B1FFBCAEC009316C1 /* menuItems.txt */; };
+		004F40441FFBCAEC009316C1 /* menuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F403C1FFBCAEC009316C1 /* menuTableViewController.swift */; };
+		004F40461FFBD03A009316C1 /* AZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F40451FFBD03A009316C1 /* AZNavigationController.swift */; };
 		00B957741FF4D99700EEC35E /* DiseasesGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */; };
 		00B957781FF4DBAD00EEC35E /* PatientDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */; };
 		00B9577A1FF4DC3400EEC35E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */; };
 		00B9577C1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9577B1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift */; };
-		00B957AB1FF53D8500EEC35E /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957AA1FF53D8500EEC35E /* CellView.swift */; };
 		00C715691FF2A3D2007FD103 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C715681FF2A3D2007FD103 /* HomeViewController.swift */; };
+		00E37CAF1FFBA3360090262E /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37C8E1FFBA3360090262E /* FSCalendar+Deprecated.m */; };
+		00E37CB01FFBA3360090262E /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37C901FFBA3360090262E /* FSCalendar.m */; };
+		00E37CB11FFBA3360090262E /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37C921FFBA3360090262E /* FSCalendarAppearance.m */; };
+		00E37CB21FFBA3360090262E /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37C941FFBA3360090262E /* FSCalendarCalculator.m */; };
+		00E37CB31FFBA3360090262E /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37C961FFBA3360090262E /* FSCalendarCell.m */; };
+		00E37CB41FFBA3360090262E /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37C981FFBA3360090262E /* FSCalendarCollectionView.m */; };
+		00E37CB51FFBA3360090262E /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37C9A1FFBA3360090262E /* FSCalendarCollectionViewLayout.m */; };
+		00E37CB61FFBA3360090262E /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37C9C1FFBA3360090262E /* FSCalendarConstants.m */; };
+		00E37CB71FFBA3360090262E /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37C9E1FFBA3360090262E /* FSCalendarDelegationFactory.m */; };
+		00E37CB81FFBA3360090262E /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37CA01FFBA3360090262E /* FSCalendarDelegationProxy.m */; };
+		00E37CB91FFBA3360090262E /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37CA31FFBA3360090262E /* FSCalendarExtensions.m */; };
+		00E37CBA1FFBA3360090262E /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37CA51FFBA3360090262E /* FSCalendarHeaderView.m */; };
+		00E37CBB1FFBA3360090262E /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37CA71FFBA3360090262E /* FSCalendarScopeHandle.m */; };
+		00E37CBC1FFBA3360090262E /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37CA91FFBA3360090262E /* FSCalendarStickyHeader.m */; };
+		00E37CBD1FFBA3360090262E /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37CAB1FFBA3360090262E /* FSCalendarTransitionCoordinator.m */; };
+		00E37CBE1FFBA3360090262E /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E37CAD1FFBA3360090262E /* FSCalendarWeekdayView.m */; };
+		00E37CBF1FFBA3360090262E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00E37CAE1FFBA3360090262E /* Info.plist */; };
+		00FEB7C91FFBBBE400E4A161 /* ghgh.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FEB7C81FFBBBE400E4A161 /* ghgh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +64,7 @@
 		000EB4471FF9132D005E08B5 /* diabeticFeet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diabeticFeet.txt; sourceTree = "<group>"; };
 		000EB4511FF94893005E08B5 /* inputPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inputPicker.xib; sourceTree = "<group>"; };
 		002334141FF3F7920035F2AE /* CellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
+		00246F9C1FFB9C8400B98A5B /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		004166B71FF0FFBB005A1E31 /* infonity.Start.17.12.25.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = infonity.Start.17.12.25.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		004166BF1FF0FFBB005A1E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,12 +76,54 @@
 		004166D21FF14C2F005A1E31 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		0042252E1FFA4E860048565C /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		004678D21FF8D5E20059C75E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		004F40351FFBCAEB009316C1 /* menuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = menuViewController.xib; sourceTree = "<group>"; };
+		004F40361FFBCAEB009316C1 /* toAppDelegate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toAppDelegate.txt; sourceTree = "<group>"; };
+		004F40371FFBCAEC009316C1 /* MenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
+		004F40381FFBCAEC009316C1 /* menuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
+		004F40391FFBCAEC009316C1 /* menuuExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuuExtension.swift; sourceTree = "<group>"; };
+		004F403A1FFBCAEC009316C1 /* menuTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = menuTableViewController.xib; sourceTree = "<group>"; };
+		004F403B1FFBCAEC009316C1 /* menuItems.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menuItems.txt; sourceTree = "<group>"; };
+		004F403C1FFBCAEC009316C1 /* menuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuTableViewController.swift; sourceTree = "<group>"; };
+		004F40451FFBD03A009316C1 /* AZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZNavigationController.swift; sourceTree = "<group>"; };
 		00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasesGuideViewController.swift; sourceTree = "<group>"; };
 		00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDirectoryViewController.swift; sourceTree = "<group>"; };
 		00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		00B9577B1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugsAndHCPsToolsViewController.swift; sourceTree = "<group>"; };
-		00B957AA1FF53D8500EEC35E /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		00C715681FF2A3D2007FD103 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		00E37C8E1FFBA3360090262E /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		00E37C8F1FFBA3360090262E /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		00E37C901FFBA3360090262E /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		00E37C911FFBA3360090262E /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		00E37C921FFBA3360090262E /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		00E37C931FFBA3360090262E /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		00E37C941FFBA3360090262E /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		00E37C951FFBA3360090262E /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		00E37C961FFBA3360090262E /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		00E37C971FFBA3360090262E /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		00E37C981FFBA3360090262E /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		00E37C991FFBA3360090262E /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		00E37C9A1FFBA3360090262E /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		00E37C9B1FFBA3360090262E /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		00E37C9C1FFBA3360090262E /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		00E37C9D1FFBA3360090262E /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		00E37C9E1FFBA3360090262E /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		00E37C9F1FFBA3360090262E /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		00E37CA01FFBA3360090262E /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		00E37CA11FFBA3360090262E /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		00E37CA21FFBA3360090262E /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		00E37CA31FFBA3360090262E /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		00E37CA41FFBA3360090262E /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		00E37CA51FFBA3360090262E /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		00E37CA61FFBA3360090262E /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		00E37CA71FFBA3360090262E /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		00E37CA81FFBA3360090262E /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		00E37CA91FFBA3360090262E /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		00E37CAA1FFBA3360090262E /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		00E37CAB1FFBA3360090262E /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		00E37CAC1FFBA3360090262E /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		00E37CAD1FFBA3360090262E /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		00E37CAE1FFBA3360090262E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FEB7C81FFBBBE400E4A161 /* ghgh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ghgh.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +152,7 @@
 		004166AE1FF0FFBB005A1E31 = {
 			isa = PBXGroup;
 			children = (
-				00B957AA1FF53D8500EEC35E /* CellView.swift */,
+				00FEB7C81FFBBBE400E4A161 /* ghgh.m */,
 				004166B91FF0FFBB005A1E31 /* infonity.Start.17.12.25.2 */,
 				004166B81FF0FFBB005A1E31 /* Products */,
 			);
@@ -99,6 +169,7 @@
 		004166B91FF0FFBB005A1E31 /* infonity.Start.17.12.25.2 */ = {
 			isa = PBXGroup;
 			children = (
+				004F40341FFBCA45009316C1 /* AZmenu */,
 				00B9577F1FF520D000EEC35E /* 3rdParty */,
 				00B957751FF4DA0C00EEC35E /* Ms */,
 				00B957761FF4DA5B00EEC35E /* Vs */,
@@ -118,6 +189,21 @@
 			name = networking;
 			sourceTree = "<group>";
 		};
+		004F40341FFBCA45009316C1 /* AZmenu */ = {
+			isa = PBXGroup;
+			children = (
+				004F40371FFBCAEC009316C1 /* MenuHeader.swift */,
+				004F403B1FFBCAEC009316C1 /* menuItems.txt */,
+				004F403C1FFBCAEC009316C1 /* menuTableViewController.swift */,
+				004F403A1FFBCAEC009316C1 /* menuTableViewController.xib */,
+				004F40391FFBCAEC009316C1 /* menuuExtension.swift */,
+				004F40381FFBCAEC009316C1 /* menuViewController.swift */,
+				004F40351FFBCAEB009316C1 /* menuViewController.xib */,
+				004F40361FFBCAEB009316C1 /* toAppDelegate.txt */,
+			);
+			path = AZmenu;
+			sourceTree = "<group>";
+		};
 		00B957721FF4D88900EEC35E /* Cs */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +214,7 @@
 				00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */,
 				00C715681FF2A3D2007FD103 /* HomeViewController.swift */,
 				00B9577B1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift */,
+				00246F9C1FFB9C8400B98A5B /* EventsViewController.swift */,
 			);
 			path = Cs;
 			sourceTree = "<group>";
@@ -145,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				004166BE1FF0FFBB005A1E31 /* Main.storyboard */,
+				004F40451FFBD03A009316C1 /* AZNavigationController.swift */,
 				000EB4511FF94893005E08B5 /* inputPicker.xib */,
 				0042252E1FFA4E860048565C /* View.xib */,
 				002334141FF3F7920035F2AE /* CellView.xib */,
@@ -156,8 +244,49 @@
 		00B9577F1FF520D000EEC35E /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				00E37C8D1FFBA3360090262E /* FSCalendar */,
 			);
 			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		00E37C8D1FFBA3360090262E /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				00E37C8E1FFBA3360090262E /* FSCalendar+Deprecated.m */,
+				00E37C8F1FFBA3360090262E /* FSCalendar.h */,
+				00E37C901FFBA3360090262E /* FSCalendar.m */,
+				00E37C911FFBA3360090262E /* FSCalendarAppearance.h */,
+				00E37C921FFBA3360090262E /* FSCalendarAppearance.m */,
+				00E37C931FFBA3360090262E /* FSCalendarCalculator.h */,
+				00E37C941FFBA3360090262E /* FSCalendarCalculator.m */,
+				00E37C951FFBA3360090262E /* FSCalendarCell.h */,
+				00E37C961FFBA3360090262E /* FSCalendarCell.m */,
+				00E37C971FFBA3360090262E /* FSCalendarCollectionView.h */,
+				00E37C981FFBA3360090262E /* FSCalendarCollectionView.m */,
+				00E37C991FFBA3360090262E /* FSCalendarCollectionViewLayout.h */,
+				00E37C9A1FFBA3360090262E /* FSCalendarCollectionViewLayout.m */,
+				00E37C9B1FFBA3360090262E /* FSCalendarConstants.h */,
+				00E37C9C1FFBA3360090262E /* FSCalendarConstants.m */,
+				00E37C9D1FFBA3360090262E /* FSCalendarDelegationFactory.h */,
+				00E37C9E1FFBA3360090262E /* FSCalendarDelegationFactory.m */,
+				00E37C9F1FFBA3360090262E /* FSCalendarDelegationProxy.h */,
+				00E37CA01FFBA3360090262E /* FSCalendarDelegationProxy.m */,
+				00E37CA11FFBA3360090262E /* FSCalendarDynamicHeader.h */,
+				00E37CA21FFBA3360090262E /* FSCalendarExtensions.h */,
+				00E37CA31FFBA3360090262E /* FSCalendarExtensions.m */,
+				00E37CA41FFBA3360090262E /* FSCalendarHeaderView.h */,
+				00E37CA51FFBA3360090262E /* FSCalendarHeaderView.m */,
+				00E37CA61FFBA3360090262E /* FSCalendarScopeHandle.h */,
+				00E37CA71FFBA3360090262E /* FSCalendarScopeHandle.m */,
+				00E37CA81FFBA3360090262E /* FSCalendarStickyHeader.h */,
+				00E37CA91FFBA3360090262E /* FSCalendarStickyHeader.m */,
+				00E37CAA1FFBA3360090262E /* FSCalendarTransitionCoordinator.h */,
+				00E37CAB1FFBA3360090262E /* FSCalendarTransitionCoordinator.m */,
+				00E37CAC1FFBA3360090262E /* FSCalendarWeekdayView.h */,
+				00E37CAD1FFBA3360090262E /* FSCalendarWeekdayView.m */,
+				00E37CAE1FFBA3360090262E /* Info.plist */,
+			);
+			path = FSCalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +332,8 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				es,
 			);
 			mainGroup = 004166AE1FF0FFBB005A1E31;
 			productRefGroup = 004166B81FF0FFBB005A1E31 /* Products */;
@@ -220,10 +351,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				004166C51FF0FFBB005A1E31 /* LaunchScreen.storyboard in Resources */,
+				004F403D1FFBCAEC009316C1 /* menuViewController.xib in Resources */,
 				004166C21FF0FFBB005A1E31 /* Assets.xcassets in Resources */,
+				00E37CBF1FFBA3360090262E /* Info.plist in Resources */,
 				004166C01FF0FFBB005A1E31 /* Main.storyboard in Resources */,
+				004F40431FFBCAEC009316C1 /* menuItems.txt in Resources */,
+				004F403E1FFBCAEC009316C1 /* toAppDelegate.txt in Resources */,
 				000EB4481FF9132D005E08B5 /* diabeticFeet.txt in Resources */,
 				002334151FF3F7920035F2AE /* CellView.xib in Resources */,
+				004F40421FFBCAEC009316C1 /* menuTableViewController.xib in Resources */,
 				0042252F1FFA4E860048565C /* View.xib in Resources */,
 				000EB4521FF94893005E08B5 /* inputPicker.xib in Resources */,
 				004166D11FF14C21005A1E31 /* webServices.txt in Resources */,
@@ -238,18 +374,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				004678D31FF8D5E20059C75E /* Result.swift in Sources */,
+				00E37CBC1FFBA3360090262E /* FSCalendarStickyHeader.m in Sources */,
+				004F40441FFBCAEC009316C1 /* menuTableViewController.swift in Sources */,
+				00E37CBB1FFBA3360090262E /* FSCalendarScopeHandle.m in Sources */,
 				004166CF1FF12EC7005A1E31 /* LogInViewController.swift in Sources */,
 				004166D31FF14C2F005A1E31 /* WebService.swift in Sources */,
+				00E37CB21FFBA3360090262E /* FSCalendarCalculator.m in Sources */,
+				004F403F1FFBCAEC009316C1 /* MenuHeader.swift in Sources */,
+				004F40401FFBCAEC009316C1 /* menuViewController.swift in Sources */,
 				00B9577A1FF4DC3400EEC35E /* ContactUsViewController.swift in Sources */,
+				00E37CBE1FFBA3360090262E /* FSCalendarWeekdayView.m in Sources */,
+				00E37CB11FFBA3360090262E /* FSCalendarAppearance.m in Sources */,
+				00E37CB31FFBA3360090262E /* FSCalendarCell.m in Sources */,
+				00E37CB61FFBA3360090262E /* FSCalendarConstants.m in Sources */,
+				00E37CBD1FFBA3360090262E /* FSCalendarTransitionCoordinator.m in Sources */,
+				00E37CB81FFBA3360090262E /* FSCalendarDelegationProxy.m in Sources */,
+				00E37CB41FFBA3360090262E /* FSCalendarCollectionView.m in Sources */,
 				00B957781FF4DBAD00EEC35E /* PatientDirectoryViewController.swift in Sources */,
 				000EB4411FF8DDC3005E08B5 /* Test.swift in Sources */,
+				00E37CB91FFBA3360090262E /* FSCalendarExtensions.m in Sources */,
 				004166BB1FF0FFBB005A1E31 /* AppDelegate.swift in Sources */,
 				000EB4461FF8F066005E08B5 /* DiabiticFeetCalculator.swift in Sources */,
+				004F40411FFBCAEC009316C1 /* menuuExtension.swift in Sources */,
+				004F40461FFBD03A009316C1 /* AZNavigationController.swift in Sources */,
+				00E37CB71FFBA3360090262E /* FSCalendarDelegationFactory.m in Sources */,
 				00C715691FF2A3D2007FD103 /* HomeViewController.swift in Sources */,
 				00B9577C1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift in Sources */,
 				00B957741FF4D99700EEC35E /* DiseasesGuideViewController.swift in Sources */,
+				00E37CAF1FFBA3360090262E /* FSCalendar+Deprecated.m in Sources */,
 				000EB4431FF8DED5005E08B5 /* Analisys.swift in Sources */,
-				00B957AB1FF53D8500EEC35E /* CellView.swift in Sources */,
+				00FEB7C91FFBBBE400E4A161 /* ghgh.m in Sources */,
+				00E37CBA1FFBA3360090262E /* FSCalendarHeaderView.m in Sources */,
+				00246F9D1FFB9C8400B98A5B /* EventsViewController.swift in Sources */,
+				00E37CB51FFBA3360090262E /* FSCalendarCollectionViewLayout.m in Sources */,
+				00E37CB01FFBA3360090262E /* FSCalendar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

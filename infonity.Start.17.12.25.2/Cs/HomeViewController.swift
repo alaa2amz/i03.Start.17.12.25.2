@@ -56,6 +56,9 @@ class HomeViewController: UIViewController {
     }
 
   
+    @IBAction func menuu(_ sender: Any) {
+        toggleMenu()
+    }
     
 
    

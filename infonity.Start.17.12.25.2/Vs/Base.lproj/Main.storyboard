@@ -74,7 +74,7 @@
                                         </state>
                                         <connections>
                                             <action selector="clickSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SX4-wM-hNz"/>
-                                            <segue destination="aDL-o8-CE3" kind="show" identifier="toHome" id="bhj-FL-q6e"/>
+                                            <segue destination="JEd-mJ-Ul5" kind="show" identifier="toHome" id="bhj-FL-q6e"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGD-cw-dxr">
@@ -207,6 +207,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ido-Ui-I58">
+                                <rect key="frame" x="137" y="120" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="menuu:" destination="aDL-o8-CE3" eventType="touchUpInside" id="NNh-fD-W5d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -215,10 +223,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bbb-jp-G0x"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Zww-33-dG6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSu-Wm-1E5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2231" y="-209"/>
+            <point key="canvasLocation" x="2626.875" y="-209.1549295774648"/>
         </scene>
         <!--Patient Directory View Controller-->
         <scene sceneID="Ix0-Bk-HwM">
@@ -247,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtW-LQ-fBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3182" y="-425"/>
+            <point key="canvasLocation" x="3579.375" y="-425.7042253521127"/>
         </scene>
         <!--Diseases Guide View Controller-->
         <scene sceneID="KoP-3f-D5D">
@@ -262,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YCk-jU-oTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3182" y="271"/>
+            <point key="canvasLocation" x="3579.375" y="270.42253521126759"/>
         </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="Wwg-0k-4hw">
@@ -291,7 +300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxB-Ai-BJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2488" y="504"/>
+            <point key="canvasLocation" x="2627" y="736"/>
         </scene>
         <!--Drugs AndHC Ps Tools View Controller-->
         <scene sceneID="Q1t-Ga-7ER">
@@ -665,7 +674,7 @@ Infections</string>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRUGS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vd-I8-g2y">
-                                <rect key="frame" x="20" y="40" width="100" height="40"/>
+                                <rect key="frame" x="20" y="84" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="V3c-8F-fZQ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="h51-mk-nTr"/>
@@ -676,7 +685,7 @@ Infections</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISEASES GUIDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1v-sd-zG6">
-                                <rect key="frame" x="20" y="80" width="133" height="20.5"/>
+                                <rect key="frame" x="20" y="124" width="133" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="133" id="6b6-bJ-Hgb"/>
                                 </constraints>
@@ -704,9 +713,9 @@ Infections</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgu-qk-u2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="504"/>
+            <point key="canvasLocation" x="1573" y="735"/>
         </scene>
-        <!--View Controller-->
+        <!--Data Source-->
         <scene sceneID="mGU-Qw-YoR">
             <objects>
                 <viewController id="gPN-pB-f0v" sceneMemberID="viewController">
@@ -714,14 +723,25 @@ Infections</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wDc-Fv-DGz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcj-Om-bJA" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="316" width="320" height="252"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gPN-pB-f0v" id="z6E-87-SvR"/>
+                                    <outlet property="delegate" destination="gPN-pB-f0v" id="7Gk-gP-B40"/>
+                                </connections>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C6Q-AN-UYY">
+                                <rect key="frame" x="0.0" y="64" width="320" height="252"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qli-Ts-L7E">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r1k-4P-pxP">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
                                     </imageView>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uxM-F3-oRr">
-                                        <rect key="frame" x="0.0" y="128" width="320" height="29"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aim-ho-ihk">
+                                        <rect key="frame" x="0.0" y="212" width="320" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="RFs-GF-K2v"/>
+                                        </constraints>
                                         <segments>
                                             <segment title="First"/>
                                             <segment title="Second"/>
@@ -729,29 +749,25 @@ Infections</string>
                                     </segmentedControl>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Qli-Ts-L7E" firstAttribute="top" secondItem="wDc-Fv-DGz" secondAttribute="top" id="7cx-FT-ZDB"/>
-                                    <constraint firstItem="uxM-F3-oRr" firstAttribute="leading" secondItem="wDc-Fv-DGz" secondAttribute="leading" id="Msl-sY-xnu"/>
-                                    <constraint firstAttribute="bottom" secondItem="uxM-F3-oRr" secondAttribute="bottom" id="Z6q-uY-mor"/>
-                                    <constraint firstAttribute="trailing" secondItem="Qli-Ts-L7E" secondAttribute="trailing" id="e6q-Em-FUR"/>
-                                    <constraint firstItem="Qli-Ts-L7E" firstAttribute="leading" secondItem="wDc-Fv-DGz" secondAttribute="leading" id="eRn-bv-Tsu"/>
-                                    <constraint firstAttribute="trailing" secondItem="uxM-F3-oRr" secondAttribute="trailing" id="q0M-zA-Xbo"/>
-                                    <constraint firstAttribute="height" constant="156" id="yWJ-Xz-Qoq"/>
+                                    <constraint firstAttribute="trailing" secondItem="r1k-4P-pxP" secondAttribute="trailing" id="9VM-LM-1m9"/>
+                                    <constraint firstAttribute="trailing" secondItem="aim-ho-ihk" secondAttribute="trailing" id="fDN-6f-W9d"/>
+                                    <constraint firstItem="r1k-4P-pxP" firstAttribute="leading" secondItem="C6Q-AN-UYY" secondAttribute="leading" id="mdF-La-Qb8"/>
+                                    <constraint firstItem="aim-ho-ihk" firstAttribute="leading" secondItem="C6Q-AN-UYY" secondAttribute="leading" id="vUa-ad-V8v"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcj-Om-bJA">
-                                <rect key="frame" x="0.0" y="156" width="320" height="412"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Qcj-Om-bJA" firstAttribute="leading" secondItem="xwM-Xk-7UY" secondAttribute="leading" id="0MI-Fe-kAd"/>
                             <constraint firstItem="xwM-Xk-7UY" firstAttribute="trailing" secondItem="Qcj-Om-bJA" secondAttribute="trailing" id="1Kw-pX-fGM"/>
-                            <constraint firstItem="wDc-Fv-DGz" firstAttribute="leading" secondItem="TAh-MY-FkE" secondAttribute="leading" id="3gX-aH-pwc"/>
-                            <constraint firstItem="Qcj-Om-bJA" firstAttribute="top" secondItem="wDc-Fv-DGz" secondAttribute="bottom" id="CDu-Q8-x3M"/>
-                            <constraint firstItem="wDc-Fv-DGz" firstAttribute="top" secondItem="TAh-MY-FkE" secondAttribute="top" id="Hmk-ID-Mqd"/>
+                            <constraint firstItem="C6Q-AN-UYY" firstAttribute="top" secondItem="xwM-Xk-7UY" secondAttribute="top" id="1vR-AO-pbF"/>
+                            <constraint firstItem="xwM-Xk-7UY" firstAttribute="trailing" secondItem="C6Q-AN-UYY" secondAttribute="trailing" id="Hg6-kK-nUi"/>
+                            <constraint firstItem="Qcj-Om-bJA" firstAttribute="top" secondItem="C6Q-AN-UYY" secondAttribute="bottom" id="IAE-C7-I9m"/>
                             <constraint firstItem="xwM-Xk-7UY" firstAttribute="bottom" secondItem="Qcj-Om-bJA" secondAttribute="bottom" id="IrQ-F8-UsG"/>
+                            <constraint firstItem="C6Q-AN-UYY" firstAttribute="leading" secondItem="xwM-Xk-7UY" secondAttribute="leading" id="TEH-1K-hEs"/>
+                            <constraint firstItem="Qcj-Om-bJA" firstAttribute="height" secondItem="C6Q-AN-UYY" secondAttribute="height" id="eIm-hy-spD"/>
                             <constraint firstItem="Qcj-Om-bJA" firstAttribute="leading" secondItem="xwM-Xk-7UY" secondAttribute="leading" id="gfT-a3-0A0"/>
-                            <constraint firstAttribute="trailing" secondItem="wDc-Fv-DGz" secondAttribute="trailing" id="iyU-mf-DA0"/>
+                            <constraint firstItem="Qcj-Om-bJA" firstAttribute="trailing" secondItem="xwM-Xk-7UY" secondAttribute="trailing" id="pg5-YE-5Qf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xwM-Xk-7UY"/>
                     </view>
@@ -773,7 +789,25 @@ Infections</string>
                     </prototypes>
                 </tableView>
             </objects>
-            <point key="canvasLocation" x="3182" y="-1103"/>
+            <point key="canvasLocation" x="3181.875" y="-1103.8732394366198"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tMd-9E-bMc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JEd-mJ-Ul5" customClass="AZNavigationController" customModule="infonity_Start_17_12_25_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rhx-wZ-6rf">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aDL-o8-CE3" kind="relationship" relationship="rootViewController" id="YWY-fX-VGJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHy-Dt-TzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2250" y="-1104"/>
         </scene>
     </scenes>
     <resources>

@@ -13,7 +13,8 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
     let delegate = UIApplication.shared.delegate as? AppDelegate
     let greenLine = UIView()
     let greenLine2 = UIView()
-    var okToGoHome = false
+    //var okToGoHome = false
+    var okToGoHome = true
    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -38,7 +39,8 @@ class LogInViewController: UIViewController,UITextFieldDelegate {
         enteredParameters["password"] = passwordTextField.text!
         if !okToGoHome{
         WebService.getdataOfWebServiceOfActionName(actionName: "login", parameters: enteredParameters) { (data, response, error) -> (Void) in
-           
+           print(String(data: data!, encoding: String.Encoding.utf8))
+            
             let json = try! JSONSerialization.jsonObject(with: data!, options:[]) as! [String:Any?]
             print("///--///")
             print(json)

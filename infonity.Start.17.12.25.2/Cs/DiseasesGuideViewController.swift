@@ -9,6 +9,8 @@
 import UIKit
 
 class DiseasesGuideViewController: UIViewController {
+   
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

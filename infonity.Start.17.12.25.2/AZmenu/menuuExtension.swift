@@ -46,13 +46,14 @@ extension UIViewController {
 
 func addMenuButton()
 {
-    let testUIBarButtonItem = UIBarButtonItem(title: "uuuu", style: .plain, target: self, action: #selector(UIViewController.clickButton))
-   // self.view.addSubview(testUIBarButtonItem)
-    testUIBarButtonItem.title = "Menu"
+    let testUIBarButtonItem = UIBarButtonItem(title: "title", style: .plain, target: self, action: #selector(UIViewController.clickButton))
+    
+    //testUIBarButtonItem.title = "Menu"
    // self.navigationItem.leftBarButtonItem  = testUIBarButtonItem
     let uu = UINavigationItem()
     uu.leftBarButtonItem = testUIBarButtonItem
-    self.navigationController?.navigationBar.items?.append(uu)
+    self.navigationItem.rightBarButtonItem = testUIBarButtonItem
+    
     }
     @objc func clickButton(){
         toggleMenu()

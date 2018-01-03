@@ -11,8 +11,11 @@
 		000EB4431FF8DED5005E08B5 /* Analisys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4421FF8DED5005E08B5 /* Analisys.swift */; };
 		000EB4461FF8F066005E08B5 /* DiabiticFeetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000EB4451FF8F066005E08B5 /* DiabiticFeetCalculator.swift */; };
 		000EB4481FF9132D005E08B5 /* diabeticFeet.txt in Resources */ = {isa = PBXBuildFile; fileRef = 000EB4471FF9132D005E08B5 /* diabeticFeet.txt */; };
-		000EB4521FF94893005E08B5 /* inputPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000EB4511FF94893005E08B5 /* inputPicker.xib */; };
-		002334151FF3F7920035F2AE /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002334141FF3F7920035F2AE /* CellView.xib */; };
+		00120C4D1FFD28F000B1A620 /* BorderAndCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00120C4C1FFD28F000B1A620 /* BorderAndCorner.swift */; };
+		00120C4F1FFD42F400B1A620 /* DiabeticFeet1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00120C4E1FFD42F400B1A620 /* DiabeticFeet1.swift */; };
+		00120C511FFD512B00B1A620 /* InputPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00120C501FFD512B00B1A620 /* InputPicker.swift */; };
+		00120C531FFD514200B1A620 /* InputPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00120C521FFD514200B1A620 /* InputPicker.xib */; };
+		00120C551FFD527C00B1A620 /* ResulrCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00120C541FFD527C00B1A620 /* ResulrCellTableViewCell.swift */; };
 		00246F9D1FFB9C8400B98A5B /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246F9C1FFB9C8400B98A5B /* EventsViewController.swift */; };
 		004166BB1FF0FFBB005A1E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */; };
 		004166C01FF0FFBB005A1E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004166BE1FF0FFBB005A1E31 /* Main.storyboard */; };
@@ -21,7 +24,6 @@
 		004166CF1FF12EC7005A1E31 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166CE1FF12EC7005A1E31 /* LogInViewController.swift */; };
 		004166D11FF14C21005A1E31 /* webServices.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004166D01FF14C21005A1E31 /* webServices.txt */; };
 		004166D31FF14C2F005A1E31 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004166D21FF14C2F005A1E31 /* WebService.swift */; };
-		0042252F1FFA4E860048565C /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0042252E1FFA4E860048565C /* View.xib */; };
 		004678D31FF8D5E20059C75E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004678D21FF8D5E20059C75E /* Result.swift */; };
 		004F403D1FFBCAEC009316C1 /* menuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004F40351FFBCAEB009316C1 /* menuViewController.xib */; };
 		004F403E1FFBCAEC009316C1 /* toAppDelegate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004F40361FFBCAEB009316C1 /* toAppDelegate.txt */; };
@@ -31,7 +33,6 @@
 		004F40421FFBCAEC009316C1 /* menuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004F403A1FFBCAEC009316C1 /* menuTableViewController.xib */; };
 		004F40431FFBCAEC009316C1 /* menuItems.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004F403B1FFBCAEC009316C1 /* menuItems.txt */; };
 		004F40441FFBCAEC009316C1 /* menuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F403C1FFBCAEC009316C1 /* menuTableViewController.swift */; };
-		004F40461FFBD03A009316C1 /* AZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F40451FFBD03A009316C1 /* AZNavigationController.swift */; };
 		00B957741FF4D99700EEC35E /* DiseasesGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */; };
 		00B957781FF4DBAD00EEC35E /* PatientDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */; };
 		00B9577A1FF4DC3400EEC35E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */; };
@@ -62,8 +63,11 @@
 		000EB4421FF8DED5005E08B5 /* Analisys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analisys.swift; sourceTree = "<group>"; };
 		000EB4451FF8F066005E08B5 /* DiabiticFeetCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabiticFeetCalculator.swift; sourceTree = "<group>"; };
 		000EB4471FF9132D005E08B5 /* diabeticFeet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diabeticFeet.txt; sourceTree = "<group>"; };
-		000EB4511FF94893005E08B5 /* inputPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inputPicker.xib; sourceTree = "<group>"; };
-		002334141FF3F7920035F2AE /* CellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
+		00120C4C1FFD28F000B1A620 /* BorderAndCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderAndCorner.swift; sourceTree = "<group>"; };
+		00120C4E1FFD42F400B1A620 /* DiabeticFeet1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabeticFeet1.swift; sourceTree = "<group>"; };
+		00120C501FFD512B00B1A620 /* InputPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPicker.swift; sourceTree = "<group>"; };
+		00120C521FFD514200B1A620 /* InputPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputPicker.xib; sourceTree = "<group>"; };
+		00120C541FFD527C00B1A620 /* ResulrCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResulrCellTableViewCell.swift; sourceTree = "<group>"; };
 		00246F9C1FFB9C8400B98A5B /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		004166B71FF0FFBB005A1E31 /* infonity.Start.17.12.25.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = infonity.Start.17.12.25.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +78,6 @@
 		004166CE1FF12EC7005A1E31 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		004166D01FF14C21005A1E31 /* webServices.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = webServices.txt; sourceTree = "<group>"; };
 		004166D21FF14C2F005A1E31 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		0042252E1FFA4E860048565C /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		004678D21FF8D5E20059C75E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		004F40351FFBCAEB009316C1 /* menuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = menuViewController.xib; sourceTree = "<group>"; };
 		004F40361FFBCAEB009316C1 /* toAppDelegate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toAppDelegate.txt; sourceTree = "<group>"; };
@@ -84,7 +87,6 @@
 		004F403A1FFBCAEC009316C1 /* menuTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = menuTableViewController.xib; sourceTree = "<group>"; };
 		004F403B1FFBCAEC009316C1 /* menuItems.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menuItems.txt; sourceTree = "<group>"; };
 		004F403C1FFBCAEC009316C1 /* menuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuTableViewController.swift; sourceTree = "<group>"; };
-		004F40451FFBD03A009316C1 /* AZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZNavigationController.swift; sourceTree = "<group>"; };
 		00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasesGuideViewController.swift; sourceTree = "<group>"; };
 		00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDirectoryViewController.swift; sourceTree = "<group>"; };
 		00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				004F40381FFBCAEC009316C1 /* menuViewController.swift */,
 				004F40351FFBCAEB009316C1 /* menuViewController.xib */,
 				004F40361FFBCAEB009316C1 /* toAppDelegate.txt */,
+				00120C4C1FFD28F000B1A620 /* BorderAndCorner.swift */,
 			);
 			path = AZmenu;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 		00B957721FF4D88900EEC35E /* Cs */ = {
 			isa = PBXGroup;
 			children = (
+				00120C4E1FFD42F400B1A620 /* DiabeticFeet1.swift */,
 				004166BA1FF0FFBB005A1E31 /* AppDelegate.swift */,
 				00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */,
 				004166CE1FF12EC7005A1E31 /* LogInViewController.swift */,
@@ -232,11 +236,10 @@
 			isa = PBXGroup;
 			children = (
 				004166BE1FF0FFBB005A1E31 /* Main.storyboard */,
-				004F40451FFBD03A009316C1 /* AZNavigationController.swift */,
-				000EB4511FF94893005E08B5 /* inputPicker.xib */,
-				0042252E1FFA4E860048565C /* View.xib */,
-				002334141FF3F7920035F2AE /* CellView.xib */,
 				004166C31FF0FFBB005A1E31 /* LaunchScreen.storyboard */,
+				00120C501FFD512B00B1A620 /* InputPicker.swift */,
+				00120C521FFD514200B1A620 /* InputPicker.xib */,
+				00120C541FFD527C00B1A620 /* ResulrCellTableViewCell.swift */,
 			);
 			path = Vs;
 			sourceTree = "<group>";
@@ -355,13 +358,11 @@
 				004166C21FF0FFBB005A1E31 /* Assets.xcassets in Resources */,
 				00E37CBF1FFBA3360090262E /* Info.plist in Resources */,
 				004166C01FF0FFBB005A1E31 /* Main.storyboard in Resources */,
+				00120C531FFD514200B1A620 /* InputPicker.xib in Resources */,
 				004F40431FFBCAEC009316C1 /* menuItems.txt in Resources */,
 				004F403E1FFBCAEC009316C1 /* toAppDelegate.txt in Resources */,
 				000EB4481FF9132D005E08B5 /* diabeticFeet.txt in Resources */,
-				002334151FF3F7920035F2AE /* CellView.xib in Resources */,
 				004F40421FFBCAEC009316C1 /* menuTableViewController.xib in Resources */,
-				0042252F1FFA4E860048565C /* View.xib in Resources */,
-				000EB4521FF94893005E08B5 /* inputPicker.xib in Resources */,
 				004166D11FF14C21005A1E31 /* webServices.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,9 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				004678D31FF8D5E20059C75E /* Result.swift in Sources */,
+				00120C511FFD512B00B1A620 /* InputPicker.swift in Sources */,
 				00E37CBC1FFBA3360090262E /* FSCalendarStickyHeader.m in Sources */,
 				004F40441FFBCAEC009316C1 /* menuTableViewController.swift in Sources */,
 				00E37CBB1FFBA3360090262E /* FSCalendarScopeHandle.m in Sources */,
+				00120C4F1FFD42F400B1A620 /* DiabeticFeet1.swift in Sources */,
 				004166CF1FF12EC7005A1E31 /* LogInViewController.swift in Sources */,
 				004166D31FF14C2F005A1E31 /* WebService.swift in Sources */,
 				00E37CB21FFBA3360090262E /* FSCalendarCalculator.m in Sources */,
@@ -396,14 +399,15 @@
 				004166BB1FF0FFBB005A1E31 /* AppDelegate.swift in Sources */,
 				000EB4461FF8F066005E08B5 /* DiabiticFeetCalculator.swift in Sources */,
 				004F40411FFBCAEC009316C1 /* menuuExtension.swift in Sources */,
-				004F40461FFBD03A009316C1 /* AZNavigationController.swift in Sources */,
 				00E37CB71FFBA3360090262E /* FSCalendarDelegationFactory.m in Sources */,
 				00C715691FF2A3D2007FD103 /* HomeViewController.swift in Sources */,
 				00B9577C1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift in Sources */,
+				00120C551FFD527C00B1A620 /* ResulrCellTableViewCell.swift in Sources */,
 				00B957741FF4D99700EEC35E /* DiseasesGuideViewController.swift in Sources */,
 				00E37CAF1FFBA3360090262E /* FSCalendar+Deprecated.m in Sources */,
 				000EB4431FF8DED5005E08B5 /* Analisys.swift in Sources */,
 				00FEB7C91FFBBBE400E4A161 /* ghgh.m in Sources */,
+				00120C4D1FFD28F000B1A620 /* BorderAndCorner.swift in Sources */,
 				00E37CBA1FFBA3360090262E /* FSCalendarHeaderView.m in Sources */,
 				00246F9D1FFB9C8400B98A5B /* EventsViewController.swift in Sources */,
 				00E37CB51FFBA3360090262E /* FSCalendarCollectionViewLayout.m in Sources */,

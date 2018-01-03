@@ -16,12 +16,7 @@ class EventsViewController: UIViewController {
         addMenuButton()
         
         
-        
-        let testUIBarButtonItem = UIBarButtonItem(image: UIImage(named: "test.png"), style: .plain, target: self, action: #selector(UIViewController.clickButton))
-        // self.view.addSubview(testUIBarButtonItem)
-        testUIBarButtonItem.title = "Menu"
-        // self.navigationItem.leftBarButtonItem  = testUIBarButtonItem
-        self.navigationItem.backBarButtonItem = testUIBarButtonItem
+      
 
       
     }

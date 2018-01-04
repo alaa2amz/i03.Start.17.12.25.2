@@ -9,10 +9,10 @@
 import UIKit
 
 class Analisys: NSObject {
-    let foot : String
+   
     let tests : [Test]
-    init(foot:String,tests:[Test]) {
-        self.foot = foot
+    init(tests:[Test]) {
+      
         self.tests = tests
     }
 

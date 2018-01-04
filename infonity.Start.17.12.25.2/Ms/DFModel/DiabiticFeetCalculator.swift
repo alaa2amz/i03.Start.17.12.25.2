@@ -9,11 +9,11 @@
 import UIKit
 
 class DiabiticFeetCalculator: NSObject {
-    static func readDataFile(foot:String,fileName:String)->Analisys
+    static func readDataFile(fileName:String)->Analisys
     {
         
         
-       var finaAnaliysis = Analisys(foot: foot, tests: [])
+       var finaAnaliysis = Analisys( tests: [])
         var finalTests = [Test]()
        
         let  dataFilePath = Bundle.main.path(forResource: fileName, ofType: nil)
@@ -53,7 +53,7 @@ class DiabiticFeetCalculator: NSObject {
           
             
         }
-          finaAnaliysis = Analisys(foot: foot, tests: finalTests)
+          finaAnaliysis = Analisys(tests: finalTests)
         return finaAnaliysis
         
     }

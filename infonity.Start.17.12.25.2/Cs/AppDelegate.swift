@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    var menu = menuViewController(nibName: "menuViewController", bundle: .main)
     
     /////
-    let leftLeg = DiabiticFeetCalculator.readDataFile(foot: "left", fileName: "diabeticFeet.txt")
-    let rightLeg = DiabiticFeetCalculator.readDataFile(foot: "right", fileName: "diabeticFeet.txt")
+    let diabeticFeetObject = DiabiticFeetCalculator.readDataFile(fileName: "diabeticFeet.txt")
+    
    
    
 

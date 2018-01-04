@@ -10,7 +10,8 @@ import UIKit
 
 class Result: NSObject {
     let header : String
-    var outcum : (String,Int)!
+    var leftFootOutcum : (String,Int)!
+    var rightFootOutcum : (String,Int)!
     let pospilities : [(String,Int?)]
     init(header:String,pospilities:[(String,Int?)]) {
         self.header = header

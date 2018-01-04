@@ -8,9 +8,9 @@
 
 import UIKit
 
-class DiabeticFeet1: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class DiabeticFeet1: UIViewController,UITableViewDelegate,UITableViewDataSource{
    
-    
+     let picker = Bundle.main.loadNibNamed("InputPicker", owner: nil, options: nil)?.first as! InputPicker
     var lefLeg :Analisys!
     var rightLeg :Analisys!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -25,8 +25,11 @@ class DiabeticFeet1: UIViewController,UITableViewDelegate,UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell2 =  selectingTable.dequeueReusableCell(withIdentifier: "resultCell")
-        return cell2!
+     let cell =  selectingTable.dequeueReusableCell(withIdentifier: "resultCell") as! ResulrCellTableViewCell
+        cell.indexRow = indexPath.row
+        cell.leftResult = lefLeg.tests[0].results
+        cell.rightResult = rightLeg.tests[0].results
+        return cell
     }
     
     @IBOutlet weak var selectingTable: UITableView!

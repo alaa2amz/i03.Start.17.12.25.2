@@ -4,11 +4,79 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiabiticFeetCalculator" customModule="infonity_Start_17_12_25_2" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InputPicker" customModule="infonity_Start_17_12_25_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="232"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D75-sz-TeK">
+                    <rect key="frame" x="0.0" y="0.0" width="440" height="232"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bad-ta-Vzg" userLabel="header">
+                            <rect key="frame" x="0.0" y="0.0" width="440" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="tDb-g2-t68"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Mw2-FW-AeW">
+                            <rect key="frame" x="0.0" y="40" width="440" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ8-ss-oL2" userLabel="Foot">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="xgh-Ra-6IA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W68-Xp-ULB">
+                                    <rect key="frame" x="380" y="0.0" width="60" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="aPy-0J-Q84"/>
+                                    </constraints>
+                                    <state key="normal" title="Done"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="lQ8-ss-oL2" firstAttribute="leading" secondItem="Mw2-FW-AeW" secondAttribute="leading" id="Xm2-7R-gcH"/>
+                                <constraint firstAttribute="trailing" secondItem="W68-Xp-ULB" secondAttribute="trailing" id="cTV-ZF-MOI"/>
+                            </constraints>
+                        </stackView>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBD-ph-J28">
+                            <rect key="frame" x="60" y="70" width="320" height="162"/>
+                        </pickerView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Mw2-FW-AeW" secondAttribute="trailing" id="8PI-mR-LQA"/>
+                        <constraint firstAttribute="trailing" secondItem="bad-ta-Vzg" secondAttribute="trailing" id="RiR-eA-Cj0"/>
+                        <constraint firstItem="Mw2-FW-AeW" firstAttribute="leading" secondItem="D75-sz-TeK" secondAttribute="leading" id="gNZ-J6-46v"/>
+                        <constraint firstItem="bad-ta-Vzg" firstAttribute="leading" secondItem="D75-sz-TeK" secondAttribute="leading" id="vfa-za-cUL"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D75-sz-TeK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="13O-Ws-wte"/>
+                <constraint firstItem="D75-sz-TeK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6I2-eV-NqW"/>
+                <constraint firstItem="D75-sz-TeK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BIn-BU-CNa"/>
+                <constraint firstItem="D75-sz-TeK" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="F4B-sd-mnu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="picker" destination="VBD-ph-J28" id="5La-rj-LVn"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="-226"/>
+        </view>
     </objects>
 </document>

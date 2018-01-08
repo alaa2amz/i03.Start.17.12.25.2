@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VR2-6g-xKe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -716,6 +715,21 @@
             </objects>
             <point key="canvasLocation" x="6024.375" y="662.32394366197184"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="2CN-zQ-u5O">
+            <objects>
+                <viewController id="c8W-xN-lJI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TSv-GH-XIW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="F0h-Mh-sHJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouC-Du-tYU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6746" y="656"/>
+        </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="Wwg-0k-4hw">
             <objects>
@@ -1158,7 +1172,7 @@ Infections</string>
             </objects>
             <point key="canvasLocation" x="1573" y="735"/>
         </scene>
-        <!--Data Source-->
+        <!--Events View Controller-->
         <scene sceneID="mGU-Qw-YoR">
             <objects>
                 <viewController id="gPN-pB-f0v" customClass="EventsViewController" customModule="infonity_Start_17_12_25_2" customModuleProvider="target" sceneMemberID="viewController">
@@ -1166,13 +1180,9 @@ Infections</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcj-Om-bJA" customClass="FSCalendar">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcj-Om-bJA">
                                 <rect key="frame" x="0.0" y="316" width="320" height="252"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="gPN-pB-f0v" id="z6E-87-SvR"/>
-                                    <outlet property="delegate" destination="gPN-pB-f0v" id="7Gk-gP-B40"/>
-                                </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C6Q-AN-UYY">
                                 <rect key="frame" x="0.0" y="64" width="320" height="252"/>
@@ -1189,6 +1199,9 @@ Infections</string>
                                             <segment title="First"/>
                                             <segment title="Second"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="segmentedControl:" destination="gPN-pB-f0v" eventType="valueChanged" id="SaF-RV-Izy"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <constraints>
@@ -1214,8 +1227,19 @@ Infections</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xwM-Xk-7UY"/>
                     </view>
+                    <connections>
+                        <outlet property="calenderView" destination="hIF-tR-oeQ" id="XEd-y8-SlY"/>
+                        <outlet property="eventsTable" destination="JNC-bW-4ps" id="w4S-iE-dCB"/>
+                        <outlet property="mainViewe" destination="Qcj-Om-bJA" id="CnW-m0-pRt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TVW-zf-qfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="hIF-tR-oeQ" customClass="FSCalendar">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="8zS-Gd-1wz"/>
+                </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JNC-bW-4ps">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1232,7 +1256,7 @@ Infections</string>
                     </prototypes>
                 </tableView>
             </objects>
-            <point key="canvasLocation" x="3181.875" y="-1103.8732394366198"/>
+            <point key="canvasLocation" x="3199" y="-1105"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="O5t-lX-Fn1">
@@ -1284,16 +1308,18 @@ Infections</string>
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="i2f-NA-dUk"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twF-d9-Aae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="5426" y="1439"/>
         </scene>
     </scenes>
     <resources>
         <image name="DiseasesGuideBG" width="480" height="766"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZVw-Kk-Sib"/>
+        <segue reference="2ab-jg-Kgz"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,12 +8,40 @@
 
 import UIKit
 
-class EventsViewController: UIViewController {
 
-   
+
+class EventsViewController: UIViewController {
+    @IBOutlet var eventsTable: UITableView!
+    @IBOutlet weak var mainViewe: UIView!
+    @IBOutlet var calenderView: UIView!
+    
+    @IBAction func segmentedControl(_ sender: Any) {
+        let segmentedControl = sender as! UISegmentedControl
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            calenderView.isHidden = false
+            eventsTable.isHidden = true
+        case 1:
+            calenderView.isHidden = true
+            eventsTable.isHidden = false
+        default:
+            return
+           
+        }
+    }
+    
     override func viewDidLoad() {
+       
+        mainViewe.addSubview(calenderView)
+         calenderView.frame = (calenderView.superview?.bounds)!
+        mainViewe.addSubview(eventsTable)
+         eventsTable.frame = (eventsTable.superview?.bounds)!
+        calenderView.isHidden = false
+        eventsTable.isHidden = true
         super.viewDidLoad()
-        addMenuButton()
+        mainViewe = calenderView
+        
+       // addMenuButton()
         
         
       

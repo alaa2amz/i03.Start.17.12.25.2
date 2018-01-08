@@ -26,9 +26,7 @@ class DiabeticFeet1: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      let cell =  selectingTable.dequeueReusableCell(withIdentifier: "resultCell") as! ResulrCellTableViewCell
-        cell.indexRow = indexPath.row
-        cell.leftResult = lefLeg.tests[0].results
-        cell.rightResult = rightLeg.tests[0].results
+       
         return cell
     }
     
@@ -37,8 +35,7 @@ class DiabeticFeet1: UIViewController,UITableViewDelegate,UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
          let delegate = UIApplication.shared.delegate as! AppDelegate
-        lefLeg = delegate.leftLeg
-        rightLeg = delegate.rightLeg
+    
         selectingTable.delegate = self
         selectingTable.dataSource = self
         

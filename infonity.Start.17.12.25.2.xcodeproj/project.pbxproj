@@ -39,6 +39,7 @@
 		004F40421FFBCAEC009316C1 /* menuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004F403A1FFBCAEC009316C1 /* menuTableViewController.xib */; };
 		004F40431FFBCAEC009316C1 /* menuItems.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004F403B1FFBCAEC009316C1 /* menuItems.txt */; };
 		004F40441FFBCAEC009316C1 /* menuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F403C1FFBCAEC009316C1 /* menuTableViewController.swift */; };
+		00950E592004CB9E0095624E /* AntiBiotics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00950E582004CB9E0095624E /* AntiBiotics.swift */; };
 		00B957741FF4D99700EEC35E /* DiseasesGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */; };
 		00B957781FF4DBAD00EEC35E /* PatientDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */; };
 		00B9577A1FF4DC3400EEC35E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */; };
@@ -84,6 +85,7 @@
 		004F403A1FFBCAEC009316C1 /* menuTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = menuTableViewController.xib; sourceTree = "<group>"; };
 		004F403B1FFBCAEC009316C1 /* menuItems.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menuItems.txt; sourceTree = "<group>"; };
 		004F403C1FFBCAEC009316C1 /* menuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuTableViewController.swift; sourceTree = "<group>"; };
+		00950E582004CB9E0095624E /* AntiBiotics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntiBiotics.swift; sourceTree = "<group>"; };
 		00B957731FF4D99700EEC35E /* DiseasesGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasesGuideViewController.swift; sourceTree = "<group>"; };
 		00B957771FF4DBAD00EEC35E /* PatientDirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDirectoryViewController.swift; sourceTree = "<group>"; };
 		00B957791FF4DC3400EEC35E /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		003D3FA62003B4370022A93A /* AntiBs */ = {
 			isa = PBXGroup;
 			children = (
+				00950E582004CB9E0095624E /* AntiBiotics.swift */,
 				003D3FA72003B4A30022A93A /* Link.swift */,
 				003D3FA92003B5B10022A93A /* LinksHolder.swift */,
 				003D3FAB2003B8C60022A93A /* SubTypeHeader.swift */,
@@ -332,6 +335,7 @@
 				00C715691FF2A3D2007FD103 /* HomeViewController.swift in Sources */,
 				00B9577C1FF4DD3700EEC35E /* DrugsAndHCPsToolsViewController.swift in Sources */,
 				00120C551FFD527C00B1A620 /* ResulrCellTableViewCell.swift in Sources */,
+				00950E592004CB9E0095624E /* AntiBiotics.swift in Sources */,
 				003D3FAE2003B9890022A93A /* MajorType.swift in Sources */,
 				00B957741FF4D99700EEC35E /* DiseasesGuideViewController.swift in Sources */,
 				000EB4431FF8DED5005E08B5 /* Analisys.swift in Sources */,

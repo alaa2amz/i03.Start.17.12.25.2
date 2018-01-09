@@ -11,7 +11,7 @@ import UIKit
 class LinksHolder: NSObject {
     let nameLabel : String
     let links : [Link]!
-    init(nameLabel:String,links:[Link]!){
+    init( nameLabel : String, links:[Link]!){
         self.nameLabel = nameLabel
         self.links = links
     }

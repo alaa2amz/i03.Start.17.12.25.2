@@ -36,7 +36,7 @@ class ResulrCellTableViewCell: UITableViewCell {
         
         
         super.awakeFromNib()
-        
+         
       
         leftField.autoresizingMask = .flexibleWidth
         leftField.autoresizesSubviews = true

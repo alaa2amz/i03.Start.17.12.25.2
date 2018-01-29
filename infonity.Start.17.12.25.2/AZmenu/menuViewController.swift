@@ -8,7 +8,7 @@
 
 import UIKit
 
-class menuViewController: UIViewController,UITableViewDataSource {
+class menuViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var itemsTable: UITableView!
     var shown = false
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -26,11 +26,16 @@ class menuViewController: UIViewController,UITableViewDataSource {
         cell?.textLabel?.text = items[indexPath.section].headerItems[indexPath.row]
         return cell!
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "vde")
+        self.present(vc, animated: true, completion: nil)
+    }
     let items = MenuHeader.getMenuObjects(with: "menuItems")
     override func viewDidLoad() {
         super.viewDidLoad()
         itemsTable.dataSource = self
+        itemsTable.delegate = self
         itemsTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         
@@ -40,7 +45,7 @@ class menuViewController: UIViewController,UITableViewDataSource {
     }
 
     
-
+  
     /*
     // MARK: - Navigation
 

@@ -19,12 +19,12 @@ class AntiBiotics: NSObject {
         let typeExtension = fileNameComponents.last
         let fileNameComponentsWithoutExtension = fileNameComponents.dropLast()
         let filePath = Bundle.main.path(forResource: fileNameComponentsWithoutExtension.joined(), ofType: typeExtension)
-        let fileString =try? String(contentsOfFile: filePath!, encoding: String.Encoding.utf8)
-        let linesOfString = fileString.components(separatedBy: "\n")
-        let headerNamesAsOneString = linesOfString[0]
-        let arrayOfHeaderNames = headerNamesAsOneString.components(separatedBy: ",")
-        let linesWithOutHeaderNamesLine = linesOfString.dropFirst()
-        let
+       // let fileString =try? String(contentsOfFile: filePath!, encoding: String.Encoding.utf8)
+        // let linesOfString = fileString?.components(separatedBy: "\n")
+       // let headerNamesAsOneString = linesOfString[0]
+     //   let arrayOfHeaderNames = headerNamesAsOneString.components(separatedBy: ",")
+      //  let linesWithOutHeaderNamesLine = linesOfString.dropFirst()
+      //  let
         
         
     }
